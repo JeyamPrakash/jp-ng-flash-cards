@@ -1,0 +1,24 @@
+{
+  "name": "jp-ng-flash-cards",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^7.0.0 || >6.0.0",
+    "@angular/core": "^7.0.0 || >6.0.0"
+  },
+  "description": "NG FLASH CARDS is used to display card with front and back view.",
+  "keywords": [
+    "Cards",
+    "Flash Cards",
+    "ng Flash Cards",
+    "flip cards",
+    "Rotation view",
+    "Rotation Cards"
+  ],
+  "author": "JeyamPrakash",
+  "license": "MIT",
+  "people": {
+    "name": "Jeyam Prakash",
+    "email": "mailtojeyam@gmail.com"
+    
+  }
+}

@@ -1,0 +1,31 @@
+<div class="flash_main-container">
+  <div class="flash_flip-container" *ngFor="let card of flashCards" (click)="flip(card)" [class.flipped]="card.flipped">
+    <!-- <div class="flipper">
+      <div class="front">
+        Front Content
+      </div>
+      <div class="back">
+        Back Content
+      </div>
+    </div> -->
+    <div class="flash_flipper">
+      <!-- <div class="flash-cards"> -->
+      <div class="flash_front">
+        <img class="flash_front_img flash_img" *ngIf="card.front.image" [src]="card.front.image" />
+        <h2 class="flash_front_title flash_title" text-center>{{card.front.title}}</h2>
+        <h3 class="flash_front_sub_title flash_sub_title" text-center>{{card.front.subtitle}}</h3>
+        <hr />
+        <p class="flash_front_content content" *ngIf="card.front.title">{{card.front.content}}</p>
+      </div>
+      <div class="flash_back">
+        <img class="flash_back_img flash_img" *ngIf="card.back.image" [src]="card.back.image" />
+        <h2 class="flash_back_title flash_title" text-center>{{card.back.title}}</h2>
+        <h3 class="flash_back_sub_title flash_sub_title" text-center>{{card.back.subtitle}}</h3>
+        <hr />
+        <p class="flash_back_content flash_content" *ngIf="card.back.title">{{card.back.content}}</p>
+      </div>
+      <!-- </div> -->
+    </div>
+  </div>
+
+</div>
